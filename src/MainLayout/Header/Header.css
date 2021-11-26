@@ -1,0 +1,22 @@
+header{
+    background-color: rgb(157, 245, 216);
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+p{
+    color: black;
+}
+
+.logo{
+    width: 40%;
+}
+
+@media only screen and (min-width:992px){
+    header{
+        justify-content: space-between;
+    }
+}

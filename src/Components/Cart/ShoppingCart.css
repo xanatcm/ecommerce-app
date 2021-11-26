@@ -1,0 +1,102 @@
+.modal{
+    
+    padding: 1rem;
+    
+    background-color: rgba(0,0,0,.8);
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    overflow: scroll;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s;
+}
+
+.modal-content{
+    margin: 1rem;
+    padding: .5rem;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: rgb(248, 248, 248);
+    border-radius: 1rem;
+    box-shadow: 20px 20px 26px -19px rgba(117,116,116,0.3);
+}
+
+.total{
+    color: white;
+    
+    padding: .5rem;
+
+}
+
+.cantidad{
+    color: black;
+    padding: .5rem;
+
+}
+
+.img-cart{
+    width: 30%;
+    padding: .3rem;
+}
+
+.btn-delete{
+    
+    background-color: transparent;
+    border-style: none;
+}
+
+.btn-out{
+    padding: 1rem;
+    border-style: none;
+    background-color: rgb(157, 245, 216);
+    border-radius: 10px;
+    margin: .5rem
+}
+
+.cantidad{
+    text-decoration: none;
+}
+
+#cart-modal:target{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.btn-close{
+    
+    padding: .5rem;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+
+}
+
+@media only screen and (min-width:992px){
+    .modal{
+        margin-left: auto;
+        width: 30%;
+
+    }
+
+    .modal-content{
+        width: 80%;
+    }
+
+    .info-cart{
+        padding: .1rem;
+    }
+
+}

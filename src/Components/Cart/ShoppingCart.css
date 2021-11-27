@@ -66,6 +66,24 @@
     margin: .5rem
 }
 
+.btn-delete:hover{
+    transform: scale(1.1,1.1);
+
+}
+
+.btn-out:hover{
+    transform: scale(1.1,1.1);
+
+}
+
+.btn-delete:active{
+    background-color: rgb(84, 131, 115);
+}
+
+.btn-out:active{
+    background-color: rgb(84, 131, 115);
+}
+
 .cantidad{
     text-decoration: none;
 }
